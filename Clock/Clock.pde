@@ -6,6 +6,10 @@ String test;
 Float temp;
 PImage img;
 String imgURL;
+String fTime;
+String fHour;
+String fMinute;
+String fSecond;
 
 
 void setup()
@@ -61,22 +65,29 @@ void generateSquares()
 
 void displayHour()
 {
+  
+   fHour = "" + hour;
+   fMinute = ":" + minute;
+   fSecond = ":" + second;
+  
    if (hour < 10) 
    {
-    text("0" + hour + ":" + minute + ":" + second, (width / 2) - 290, (height / 2) + 20);
+    fHour = "0" + hour;
    } 
-   else if (minute < 10) 
+   
+   if (minute < 10)
    {
-    text(hour + ":0" + minute + ":" + second, (width / 2) - 290, (height / 2) + 20);
-   } 
-   else if (second < 10) 
-   {
-      text(hour + ":" + minute + ":0" + second, (width / 2) - 290, (height / 2) + 20);
-   } 
-   else 
-   {
-      text(hour + ":" + minute + ":" + second, (width / 2) - 290, (height / 2) + 20);
+     fMinute = "0" + minute;
    }
+   
+   if (second < 10)
+   {
+     fSecond = ":0" + second;
+   }
+   
+   fTime = fHour + fMinute + fSecond;
+   
+   text(fTime, (width / 2) - 290, (height / 2) + 20);
 }
 
 void displayWeather()

@@ -6,8 +6,8 @@ This is a Java Processing portable screensaver that shows users current time and
 ### To-Do List:
 
 1. Add weather API ✅
-2. Get user location to display accurate weather reading
+2. Update screenshot. ✅
 3. Background display without interrupting clock ✅
 4. Fix hour display to accomodate single digits ✅
 5. Add weather icon ✅
-6. Update screenshot.
+6. Get user location to display accurate weather reading ⌛️

@@ -77,7 +77,7 @@ void displayHour()
    
    if (minute < 10)
    {
-     fMinute = "0" + minute;
+     fMinute = ":0" + minute;
    }
    
    if (second < 10)
